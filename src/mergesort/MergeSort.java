@@ -34,6 +34,7 @@ public class MergeSort {
                 i += 1;
                 if (i > arrayOne.length - 1) {
                     System.arraycopy(arrayTwo, j, finalArray, k + 1, arrayTwo.length - j);
+                    return finalArray;
                 }
             } else {
                 finalArray[k] = arrayTwo[j];
